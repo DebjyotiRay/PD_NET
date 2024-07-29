@@ -1,56 +1,49 @@
 import streamlit as st
 from openai import OpenAI
-
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
+import re
+# Initialize the OpenAI client
+client = OpenAI(
+    base_url="https://integrate.api.nvidia.com/v1",
+    api_key="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"
 )
 
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
+# Streamlit application
+st.title("Gene Citation Finder")
 
-    # Create an OpenAI client.
-    client = OpenAI(api_key=openai_api_key)
+# User input
+user_input = st.text_input("Enter your biomedical question:", "What are the genes responsible for Parkinson's disease?")
 
-    # Create a session state variable to store the chat messages. This ensures that the
-    # messages persist across reruns.
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+# Prompt to emphasize specificity and citations
+prompt = (
+    f"Answer the following biomedical question in a very specific manner, "
+    f"providing only the names of the genes or causes when asked. Do not explain anything extra "
+    f"unless specifically asked in the user query. Provide citations to support your answer, "
+    f"included with links. Highlight only the main keywords or genes:\n\n{user_input}"
+)
 
-    # Display the existing chat messages via `st.chat_message`.
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+# Button to submit the input and get the response
+if st.button("Get Genes and Citations"):
+    completion = client.chat.completions.create(
+        model="meta/llama-3.1-405b-instruct",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+        top_p=0.7,
+        max_tokens=1024,
+        stream=True
+    )
 
-    # Create a chat input field to allow the user to enter a message. This will display
-    # automatically at the bottom of the page.
-    if prompt := st.chat_input("What is up?"):
+    response = ""
+    for chunk in completion:
+        if chunk.choices[0].delta.content is not None:
+            response += chunk.choices[0].delta.content
 
-        # Store and display the current prompt.
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+    # Display the response as plain text
+    st.write("Response")
+    st.write(response)
 
-        # Generate a response using the OpenAI API.
-        stream = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
-        )
-
-        # Stream the response to the chat using `st.write_stream`, then store it in 
-        # session state.
-        with st.chat_message("assistant"):
-            response = st.write_stream(stream)
-        st.session_state.messages.append({"role": "assistant", "content": response})
+    # Extract and format citations
+    citations = re.findall(r'\[(.*?)\]\((.*?)\)', response)
+    if citations:
+        st.write("Citations:")
+        for text, link in citations:
+            st.write(f"[{text}]({link})")
