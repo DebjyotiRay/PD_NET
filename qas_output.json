@@ -1,0 +1,366 @@
+[
+    {
+        "question": "What is the name of the project that is designed to help solve the task of knowledge GRAPH",
+        "answer": "TECHGPT-2.0"
+    },
+    {
+        "question": "What is TechGPT-2.0 trained on?",
+        "answer": "H"
+    },
+    {
+        "question": "What is the new capability of the Ascend server?",
+        "answer": "enabling it to process texts in\nvarious domains"
+    },
+    {
+        "question": "What is the main focus of this report?",
+        "answer": "model training"
+    },
+    {
+        "question": "What are the two main questions that remain unanswered?",
+        "answer": "whether future research should focus on KG assisting LLMs or vice versa"
+    },
+    {
+        "question": "What is the main focus of the research group?",
+        "answer": "experienced researchers"
+    },
+    {
+        "question": "What is the name of the knowledge graph used to construct the subtask dataset?",
+        "answer": "NER and RTE"
+    },
+    {
+        "question": "What is the name of the project?",
+        "answer": "TechGPT-2.0"
+    },
+    {
+        "question": "What is the purpose of this study?",
+        "answer": "to share insights into the unique\nchallenges"
+    },
+    {
+        "question": "What is the name of the open-source communi- cation that provides guidance for",
+        "answer": "open-source\ncommuni"
+    },
+    {
+        "question": "What are some of the resources available for firsthand experiences?",
+        "answer": "HuggingFace, ModelScope, and WiseModel"
+    },
+    {
+        "question": "What is the main focus of pre-training?",
+        "answer": "language models"
+    },
+    {
+        "question": "What is the main benefit of pre-training in the field of NLP?",
+        "answer": "the training data can be derived from any unlabeled text corpus"
+    },
+    {
+        "question": "What was the first step in model capability?",
+        "answer": "substantial leap in model\ncapabiliti"
+    },
+    {
+        "question": "What is the name of the GPT-4?",
+        "answer": "GPT-3"
+    },
+    {
+        "question": "What is the ChatGLM optimized for?",
+        "answer": "Chinese question"
+    },
+    {
+        "question": "What is the Qwen series of general-purpose question-answering large models?",
+        "answer": "enco"
+    },
+    {
+        "question": "What scales are supported by the mpassing parameter scales?",
+        "answer": "1.8 billion (1.8B)"
+    },
+    {
+        "question": "What is the main goal of training large language models?",
+        "answer": "to solve the task of knowledge graph construction"
+    },
+    {
+        "question": "What is the purpose of fine-tuning on small-scale data?",
+        "answer": "to better align the final task with human preferences"
+    },
+    {
+        "question": "What is the capital of China?",
+        "answer": "The capital of China"
+    },
+    {
+        "question": "What city is the capital of China?",
+        "answer": "Beijing"
+    },
+    {
+        "question": "What is the principle behind Full Fine Tuning?",
+        "answer": "to train all parameters of the LLM"
+    },
+    {
+        "question": "What is the primary advantage of Full Fine Tuning?",
+        "answer": "superior performance"
+    },
+    {
+        "question": "What is the motivation behind Prefix Tuning?",
+        "answer": "adding appropriate conditions in the prompt\ncontext"
+    },
+    {
+        "question": "What is the difference between Prompt Tuning and Prefix Tuning?",
+        "answer": "their specific implementations"
+    },
+    {
+        "question": "What is the main focus of QLoRA?",
+        "answer": "quantization"
+    },
+    {
+        "question": "What is the main focus of the TechGPT project?",
+        "answer": "intricacies of data\ncollection and processing"
+    },
+    {
+        "question": "What is the debugging of the Shengteng server?",
+        "answer": "its usage and highlights encountered"
+    },
+    {
+        "question": "What is the name of the project that is a large language model project?",
+        "answer": "The model\n3\nTechGPT-2.0"
+    },
+    {
+        "question": "What is the learning rate of the graph?",
+        "answer": "8e-6\n1.5e-7"
+    },
+    {
+        "question": "What model demonstrated superior perfomance?",
+        "answer": "ChatGLM-like"
+    },
+    {
+        "question": "What model encountered debugging challenges?",
+        "answer": "PanGuAlpha"
+    },
+    {
+        "question": "What did the ChatGLM model fail to demonstrate knowledge graph construction ability?",
+        "answer": "a discernible level of generalization ability"
+    },
+    {
+        "question": "What was the original model for the TechGPT-2.0 project?",
+        "answer": "LLAMA2"
+    },
+    {
+        "question": "What model was the focus of the research?",
+        "answer": "LLAMA2"
+    },
+    {
+        "question": "What was the focus of the tests on the Chinese-Alpaca-2-7B model?",
+        "answer": "long text"
+    },
+    {
+        "question": "What was the first step in the development of the TechGPT-2.0 project?",
+        "answer": "the decision was made to employ Chinese-Alpaca-2"
+    },
+    {
+        "question": "What was the main goal of the Chat version?",
+        "answer": "enhances the\nfundamental"
+    },
+    {
+        "question": "What is the difference between the two Chat models?",
+        "answer": "their performance diff"
+    },
+    {
+        "question": "What is the difference between Atom-7B-Chat and Chinese-Alpaca-2?",
+        "answer": "slightly better overall capabilities"
+    },
+    {
+        "question": "What was the performance of Atom-7B-Chat?",
+        "answer": "poorly"
+    },
+    {
+        "question": "What is the purpose of the data collection?",
+        "answer": "to address this gap\nin the Chinese open-source community"
+    },
+    {
+        "question": "What is the focus of the TechGPT project?",
+        "answer": "knowledge graph construction task"
+    },
+    {
+        "question": "What is the name of the dataset that contains the knowledge graph construction task data?",
+        "answer": "400W instruction fine-tuning dataset"
+    },
+    {
+        "question": "What did the early data collection of domain RTE and domain NER task data originate from?",
+        "answer": "open-source instruction fine-tuning datasets"
+    },
+    {
+        "question": "What dataset is annotated through remote supervision?",
+        "answer": "KnowLM-IE dataset"
+    },
+    {
+        "question": "What is the total number of instances of the knowledge graph?",
+        "answer": "70K"
+    },
+    {
+        "question": "What was the purpose of the task of knowledge graph construction?",
+        "answer": "solve"
+    },
+    {
+        "question": "What type of data is included in the unanswerable question data?",
+        "answer": "positive and negative responses"
+    },
+    {
+        "question": "What is the name of the method used to debug the Ascend server?",
+        "answer": "Figure 3: Summary data proportion chart\n3.3"
+    },
+    {
+        "question": "What is the bare metal approach for communication?",
+        "answer": "five Ascend 910A servers"
+    },
+    {
+        "question": "What is the goal of the TechGPT-2.0 project?",
+        "answer": "to solve the task of knowledge graph construction"
+    },
+    {
+        "question": "What version of Mindspore was recently adapted on the Ascend server?",
+        "answer": "LLAMA2"
+    },
+    {
+        "question": "What is the Chinese Alpaca command format?",
+        "answer": "7B"
+    },
+    {
+        "question": "What is the command format of Atom-7B-Chat?",
+        "answer": "LLAMA1-Alpaca"
+    },
+    {
+        "question": "What is the purpose of Mindformer's LLAMA2 project?",
+        "answer": "migration"
+    },
+    {
+        "question": "What is the main challenge of adapting Mindformer to LLAMA2?",
+        "answer": "modifications based on the configuration file"
+    },
+    {
+        "question": "What is the vocabulary size for LLAMA2?",
+        "answer": "elected configuration file"
+    },
+    {
+        "question": "What is the basis model's perforation?",
+        "answer": "fine-tuning"
+    },
+    {
+        "question": "What was the problem with training data lacked multiple shuffling instances?",
+        "answer": "premature model fitting"
+    },
+    {
+        "question": "What was the model's sensitivity to tasks while lacking the ability to solve others?",
+        "answer": "model"
+    },
+    {
+        "question": "What is the purpose of this report?",
+        "answer": "to delve into the challenges faced\nduring project develop"
+    },
+    {
+        "question": "What is the most critical data issue encountered during training?",
+        "answer": "noise withi"
+    },
+    {
+        "question": "What is the KnowLM-IE dataset?",
+        "answer": "encompasses diverse\nfields"
+    },
+    {
+        "question": "What was the problem with the model's ability to handle entity-relation triples?",
+        "answer": "a portion of the data was filtered and incorporated as newly added\ntriplet data"
+    },
+    {
+        "question": "What is the answer to a question that pertains to RTE?",
+        "answer": "the NER task"
+    },
+    {
+        "question": "What is the role of extrapolation in the TechGPT-2.0 project?",
+        "answer": "relative\ndistance for attention score computation"
+    },
+    {
+        "question": "What is the main benefit of the position interpolation method?",
+        "answer": "enhancing the model\u2019s capacity to handle long texts"
+    },
+    {
+        "question": "What did the QLoRA method do to extend the TechGPT model?",
+        "answer": "extended the TechGPT model\u2019s window to up to 12K"
+    },
+    {
+        "question": "What is the focus of the TechGPT-2.0 project?",
+        "answer": "long-text issues"
+    },
+    {
+        "question": "What is the purpose of the Chat model?",
+        "answer": "demonstrating commendable performance"
+    },
+    {
+        "question": "What is the scope of the report?",
+        "answer": "It is intended solely\nas a reference for subsequent researchers"
+    },
+    {
+        "question": "What is the main focus of the report?",
+        "answer": "model training"
+    },
+    {
+        "question": "What is the name of the large language model project?",
+        "answer": "8\nTechGPT-2.0"
+    },
+    {
+        "question": "What is the name of the person who wrote the article?",
+        "answer": "Jason Yosinski"
+    },
+    {
+        "question": "What is the name of the paper that was published in the journal Advances in neural information processing",
+        "answer": "Advances in\nneural information processing systems"
+    },
+    {
+        "question": "What is the name of the article that was published in the OpenAI blog?",
+        "answer": "1(8):9, 2019"
+    },
+    {
+        "question": "What is the name of the book that opens the possibility of learning from a language model?",
+        "answer": "OpenAI"
+    },
+    {
+        "question": "What is the name of the preprint of arXiv:2302.13?",
+        "answer": "arXiv preprint arXiv:2302.13"
+    },
+    {
+        "question": "What is the name of the preprint of Bloom?",
+        "answer": "arXiv:2211.05100, 2022"
+    },
+    {
+        "question": "What is the name of the preprint for Glm-130b?",
+        "answer": "An open bilingual pre-trained model"
+    },
+    {
+        "question": "What is the name of the paper that is based on the learning to use human feedback?",
+        "answer": "Neural Information\nProcessing Systems"
+    },
+    {
+        "question": "What is the name of the preprint of Lima: Less is more for alignment?",
+        "answer": "arXiv"
+    },
+    {
+        "question": "What is the name of the book that was published in 2021?",
+        "answer": "arXiv:2104.08691"
+    },
+    {
+        "question": "What is the name of the preprint of Lora?",
+        "answer": "arXiv:2106.09685, 2021"
+    },
+    {
+        "question": "What is the name of the model?",
+        "answer": "An open bilingual pre-trained model"
+    },
+    {
+        "question": "What is the name of the large-scale autoregressive pretrained chinese",
+        "answer": "Pangu-\u03b1"
+    },
+    {
+        "question": "What is the name of the team that will work on the language model?",
+        "answer": "InternLM Team"
+    },
+    {
+        "question": "What is the name of the paper that was published in 2024?",
+        "answer": "Roformer"
+    },
+    {
+        "question": "What is the purpose of the nlp task?",
+        "answer": "owledge-\nintensive"
+    }
+]
